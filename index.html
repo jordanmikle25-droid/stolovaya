@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Столовая колледжа города Конаев</title>
+<style>
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f5f7fb; color: #202a35; }
+header { color: white; min-height: 85vh; background: linear-gradient(#122b46b8,#122b46d9), url("assets/2b9f73cffe.jpg") center/cover; }
+nav { position: sticky; top: 0; z-index: 10; background: #132b43e8; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 6%; }
+.logo { font-weight: bold; }
+.links { display: flex; gap: 18px; flex-wrap: wrap; }
+nav a { color: white; text-decoration: none; }
+nav a:hover { color: #ffc44d; }
+.hero { padding: 70px 7%; display: flex; align-items: center; min-height: 70vh; }
+.hero-content { max-width: 760px; }
+.tag { display: inline-block; background: #15966f; padding: 8px 12px; border-radius: 25px; font-size: 14px; margin-bottom: 12px; }
+h1 { font-size: clamp(32px,5vw,52px); line-height: 1.1; margin: 0 0 18px; }
+.hero p { font-size: 18px; line-height: 1.6; }
+.button { display: inline-block; background: #ffc04a; color: #17202b; padding: 12px 18px; border-radius: 10px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+section { padding: 60px 7%; }
+.section-heading { text-align: center; margin-bottom: 28px; }
+.section-heading h2 { font-size: 32px; margin: 0 0 10px; }
+.section-heading p { color: #64748b; margin: 0; }
+.two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
+.card { background: white; padding: 22px; border-radius: 16px; box-shadow: 0 6px 22px #00000010; }
+.photo { width: 100%; height: 330px; object-fit: cover; border-radius: 16px; }
+.steps, .menu { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
+.step, .menu-card { background: white; padding: 20px; border-radius: 16px; }
+.number { display: inline-flex; width: 40px; height: 40px; background: #11776c; color: white; border-radius: 50%; justify-content: center; align-items: center; font-weight: bold; }
+.menu { grid-template-columns: repeat(3,1fr); }
+.menu-card h3 { margin-top: 0; }
+.menu-card p { line-height: 1.5; }
+.gallery { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 14px; }
+.gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 14px; }
+.gallery img:first-child { height: 514px; grid-row: span 2; }
+.media { background: #eaf5f3; }
+.media-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; }
+.media-card { background: white; padding: 20px; border-radius: 16px; }
+video { width: 100%; border-radius: 12px; background: #111; }
+audio { width: 100%; margin-top: 12px; }
+.stats { background: #11776c; color: white; border-radius: 18px; padding: 24px; display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; text-align: center; }
+.stats strong { display: block; font-size: 26px; }
+footer { background: #142238; color: white; text-align: center; padding: 32px 7%; }
+@media (max-width: 850px) { .two-columns,.steps,.menu,.media-grid,.stats { grid-template-columns: 1fr; } .gallery { grid-template-columns: 1fr; } .gallery img,.gallery img:first-child { height: 250px; grid-row: auto; } nav { align-items: flex-start; flex-direction: column; } .links { gap: 12px; } .hero { padding-top: 45px; } }
+</style>
+</head>
+<body>
+<header id="home">
+<nav>
+<div class="logo">СТОЛОВАЯ КОЛЛЕДЖА • КОНАЕВ</div>
+<div class="links">
+<a href="#about">О столовой</a><a href="#process">Как готовят</a><a href="#menu">Меню</a><a href="#media">Видео и аудио</a><a href="#gallery">Фото</a>
+</div>
+</nav>
+<div class="hero"><div class="hero-content">
+<span class="tag">Многопрофильный колледж города Конаев</span>
+<h1>Столовая колледжа: от кухни до готового обеда</h1>
+<p>В этом проекте рассказывается о столовой колледжа, приготовлении еды, кухонном оборудовании и выдаче готовых блюд.</p>
+<a class="button" href="#about">Посмотреть проект</a>
+</div></div></header>
+<section id="about">
+<div class="section-heading"><h2>О столовой колледжа</h2><p>Место, где студенты обедают во время учебного дня</p></div>
+<div class="two-columns"><img class="photo" src="assets/2b9f73cffe.jpg" alt="Обеденный зал столовой">
+<div class="card"><h3>Как устроена столовая</h3><p>В столовой есть места для приготовления и хранения продуктов, выдачи еды и обеденного зала.</p><p>Студенты выбирают готовые блюда, выпечку, салаты и напитки на линии раздачи.</p><p>Столовая помогает студентам удобно пообедать в течение учебного дня.</p></div></div>
+</section>
+<section id="process" style="background:#eef6f4">
+<div class="section-heading"><h2>Как готовят еду</h2><p>От подготовки продуктов до обеда</p></div>
+<div class="steps">
+<div class="step"><span class="number">1</span><h3>Подготовка</h3><p>Продукты проверяют, моют и готовят к обработке.</p></div>
+<div class="step"><span class="number">2</span><h3>Приготовление</h3><p>Готовят супы, гарниры, горячие блюда и выпечку.</p></div>
+<div class="step"><span class="number">3</span><h3>Раздача</h3><p>Готовые блюда ставят на линию выдачи.</p></div>
+<div class="step"><span class="number">4</span><h3>Обед</h3><p>Студент получает порцию и садится за стол.</p></div></div>
+<div class="two-columns" style="margin-top:28px"><div class="card"><h3>Оборудование кухни</h3><p>На кухне используют плиты, духовки, холодильники, рабочие столы и другое оборудование.</p><p>С его помощью можно готовить много порций и поддерживать порядок в работе.</p></div><img class="photo" src="assets/2d6f0ee228.jpg" alt="Кухня и оборудование столовой"></div>
+</section>
+<section id="menu"><div class="section-heading"><h2>Меню столовой</h2><p>Примеры блюд</p></div>
+<div class="menu">
+<div class="menu-card"><h3>🍲 Первые блюда</h3><p>Суп, борщ, лапша, бульон.</p><b>Горячая подача</b></div>
+<div class="menu-card"><h3>🍛 Вторые блюда</h3><p>Котлета с гарниром, плов, макароны, рис.</p><b>Основной обед</b></div>
+<div class="menu-card"><h3>🥗 Салаты</h3><p>Овощные салаты и закуски.</p><b>Свежая подача</b></div>
+<div class="menu-card"><h3>🥐 Выпечка</h3><p>Булочки, пирожки и самса.</p><b>Перекус</b></div>
+<div class="menu-card"><h3>☕ Напитки</h3><p>Чай, компот и вода.</p><b>К обеду</b></div>
+<div class="menu-card"><h3>🍽 Комплексный обед</h3><p>Блюдо, гарнир, салат и напиток.</p><b>Полноценный обед</b></div>
+</div>
+<div class="two-columns" style="margin-top:28px"><img class="photo" src="assets/8cb0ff081c.jpg" alt="Готовая еда на раздаче"><div class="card"><h3>Готовая продукция</h3><p>После приготовления еду раскладывают по порциям. Выпечку и блюда выставляют так, чтобы их было удобно выдавать.</p><p>На фотографиях показаны примеры готовой еды.</p></div></div>
+</section>
+<section style="background:#eef2ff"><div class="section-heading"><h2>Как студент получает еду</h2><p>Порядок обслуживания</p></div><div class="two-columns"><div class="card"><h3>Линия раздачи</h3><p>Студент подходит к линии, выбирает блюдо и получает порцию у сотрудника.</p><p>После этого проходит в зал и обедает за столом.</p></div><img class="photo" src="assets/6c6025bb63.jpg" alt="Посетители в столовой"></div></section>
+<section class="media" id="media"><div class="section-heading"><h2>Видео и аудио</h2><p>Видео и звуковая дорожка внутри страницы</p></div><div class="media-grid"><div class="media-card"><h3>Видео</h3><video controls playsinline preload="metadata" poster="assets/2b9f73cffe.jpg"><source src="assets/4f05d359ef.mp4" type="video/mp4">Ваш браузер не поддерживает видео.</video></div><div class="media-card"><h3>Аудио</h3><p>Включите звуковую дорожку:</p><audio controls preload="metadata"><source src="assets/09c286d197.mp3" type="audio/mpeg">Ваш браузер не поддерживает аудио.</audio></div></div></section>
+<section id="gallery"><div class="section-heading"><h2>Фотогалерея</h2><p>Фотографии столовой и готовых блюд</p></div><div class="gallery">
+<img src="assets/2d6f0ee228.jpg" alt="Работники кухни и линия раздачи"><img src="assets/8cb0ff081c.jpg" alt="Готовые блюда"><img src="assets/2b9f73cffe.jpg" alt="Обеденный зал"><img src="assets/42b8de83d5.jpg" alt="Супы"><img src="assets/6c6025bb63.jpg" alt="Посетители столовой"><img src="assets/ebe0c93b0f.png" alt="Работники столовой">
+</div></section>
+<section><div class="stats"><div><strong>6</strong>фотографий в галерее</div><div><strong>1</strong>HTML-файл</div><div><strong>Все</strong>материалы встроены</div></div><p style="color:#64748b;font-size:13px;margin-top:16px">Меню на сайте приведено для примера и не является официальным меню колледжа.</p></section>
+<footer><h3>Проект: «Столовая многопрофильного колледжа города Конаев»</h3><p>HTML и CSS • Учебный проект</p><a class="button" href="#home">Наверх</a></footer>
+</body></html>
